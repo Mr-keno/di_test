@@ -5,11 +5,11 @@ import org.springframework.stereotype.Controller;
 import com.hostmdy.di.service.GreetingService;
 
 @Controller
-public class GreetingController {
+public class ConstructorInjectionController {
 	
 	private final GreetingService greetingService;
 
-	public GreetingController(GreetingService greetingService) {
+	public ConstructorInjectionController(GreetingService greetingService) {
 		super();
 		this.greetingService = greetingService;
 	}
@@ -17,5 +17,7 @@ public class GreetingController {
 	public String sayHello() {
 		return greetingService.greet();
 	}
-
+	
+	
+	
 }
