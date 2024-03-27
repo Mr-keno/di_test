@@ -10,7 +10,6 @@ import com.hostmdy.di.service.GreetingService;
 public class PropertyInjectionController {
 	
 	@Autowired
-	@Qualifier("propertyGreetingService")
 	public GreetingService greetingService;
 	
 	public String sayHello() {
