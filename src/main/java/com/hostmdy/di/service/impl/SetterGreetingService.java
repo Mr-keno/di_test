@@ -5,11 +5,14 @@ import org.springframework.stereotype.Service;
 import com.hostmdy.di.service.GreetingService;
 
 @Service
-public class GreetingServiceImpl implements GreetingService {
+public class SetterGreetingService implements GreetingService {
 
 	@Override
 	public String greet() {
-		return "Hello DI";
+		// TODO Auto-generated method stub
+		return "Hello Setter Injection...";
 	}
 
+	
+	
 }
