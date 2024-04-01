@@ -1,18 +1,18 @@
 package com.hostmdy.di.service.impl;
 
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import com.hostmdy.di.service.GreetingService;
 
-@Service
-public class GreetingServiceImpl implements GreetingService {
+@Service("i18nGreetingBean")
+@Profile({"KR","default"})
+public class KoreaGreetingService implements GreetingService{
 
-	public static final String MESSAGE = "Hello, Morning";
-	
 	@Override
 	public String greet() {
 		// TODO Auto-generated method stub
-		return MESSAGE;
+		return "A_nyar_zin_yor";
 	}
 
 }
